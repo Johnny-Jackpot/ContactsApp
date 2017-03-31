@@ -62,8 +62,7 @@ http://localhost:8000/googleClientOAuth
 				</pre>
 				<p>-> create -> ok -> download JSON</p>
 				<p>save as: <i>yourProjectFolder/app/config/google_client_secret.json</i></p>
-			</li>
-			
+			</li>			
 		</ul>
 	</li>
 	<li>
