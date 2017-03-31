@@ -50,7 +50,6 @@ ALTER TABLE `message` ADD CONSTRAINT `constraint_name` FOREIGN KEY (`contact_id`
 			<li>Press "Go to credentials" -> "cancel" on "Add credentials to your project" form</li>
 			<li>Open tab "OAuth consent screen" fill in "Product name shown to users" and save</li>
 			<li>Open tab "Credentials" -> OAuth client ID -> Web application</li>
-			<li>Open tab "Credentials" -> OAuth client ID -> Web application</li>
 			<li>
 				<p>Add Authorized redirect URIs:</p>
 				<pre>
