@@ -46,6 +46,7 @@ ALTER TABLE `message` ADD CONSTRAINT `constraint_name` FOREIGN KEY (`contact_id`
 		<p>Setup your gmail accaut</p>
 		<ul>
 			<li>Open <a href="https://console.developers.google.com/start/api?id=gmail&hl=uk">wizzard</a></li>
+			<li>Select "Create a project" and press continue</li>
 			<li>Press "Go to credentials" -> "cancel" on "Add credentials to your project" form</li>
 			<li>Open tab "OAuth consent screen" fill in "Product name shown to users" and save</li>
 			<li>Open tab "Credentials" -> OAuth client ID -> Web application</li>
