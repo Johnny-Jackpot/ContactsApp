@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contacts{% endblock %}
+
+{% block content %}
+
+	{% for flash_message in app.session.flashBag.get('notice') %}
+	    <h2>{{ flash_message }}</h2>
+	{% endfor %}
+	{% for flash_message in app.session.flashBag.get('warning') %}
+	    <h2>{{ flash_message }}</h2>
+	{% endfor %}
+
+	{% if contacts %}
+		<table>
+			{% for contact in contacts %}
+				<tr>
+					<td>{{ contact.firstName }}</td>
+					<td>{{ contact.lastName }}</td>
+					<td>
+						<a href="{{ path('sendMessage', {'id': contact.id}) }}">
+							Send message
+						</a>
+					</td>
+					<td>
+						<a href="{{ path('history', {'id': contact.id}) }}">
+							History
+						</a>
+					</td>
+					<td>
+						<a href="{{ path('deleteContact', {'id': contact.id}) }}">
+							Delete contact
+						</a>
+					</td>
+				</tr>
+			{% endfor %}
+		</table>
+	{% else %}
+		<p>There are no contact yet.</p>
+	{% endif %}
+
+{% endblock %}
+
+

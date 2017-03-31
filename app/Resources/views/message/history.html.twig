@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}History{% endblock %}
+
+{% block content %}
+	<h2>Contact: {{ contact.firstName }} {{ contact.lastName }}</h2>
+	<ul>
+		{% for message in messages %}
+			<li>
+				<h3>Subject: {{ message.subject }}</h3>
+				<p>{{ message.body }}</p>
+			</li>
+		{% else %}
+			<p>No messages for this contact</p>
+		{% endfor %}
+	</ul>
+{% endblock %}

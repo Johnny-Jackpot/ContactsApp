@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Send message{% endblock %}
+
+{% block content %}
+	<h2>Send to: {{ contact.firstName }} {{ contact.lastName }}</h2>
+	{{ form_start(form) }}
+	{{ form_widget(form) }}
+	{{ form_end(form) }}
+{% endblock %}

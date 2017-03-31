@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Test Application{% endblock %}</title>
+    </head>
+    <body>
+        {% block nav %}
+        	<nav>
+        		<ul>
+        			<li>
+        				<a href="{{ path('contacts') }}">
+        					Home
+        				</a>
+        			</li>
+        			<li>
+        				<a href="{{ path('addContact') }}">
+        					Add new contact
+        				</a>
+        			</li>
+        		</ul>
+        	</nav>
+        {% endblock %}
+        {% block content %}{% endblock %}
+    </body>
+</html>
