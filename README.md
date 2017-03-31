@@ -66,4 +66,4 @@ http://localhost:8000/googleClientOAuth
 		<pre>php bin/console server:run</pre>
 	</li>	
 </ol>
-<p>user: admin, password: helloworld</p>
+<p><pre>user: admin, password: helloworld</pre></p>
