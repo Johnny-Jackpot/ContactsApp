@@ -41,11 +41,7 @@
 		<p>Update constraint (on delete cascade , on update cascade) either through console or phpmyadmin</p>
 		<pre>ALTER TABLE `message` DROP FOREIGN KEY `constraint_name`; 
 ALTER TABLE `message` ADD CONSTRAINT `constraint_name` FOREIGN KEY (`contact_id`) REFERENCES `contacts`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;</pre>
-	</li>
-	<li>
-		<p>Create the Database Tables/Schema</p>
-		<pre>php bin/console doctrine:schema:update --force</pre>
-	</li>
+	</li>	
 	<li>
 		<p>Setup your gmail accaut</p>
 		<ul>
